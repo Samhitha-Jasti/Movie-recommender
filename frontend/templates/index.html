@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="container">
+        <h1>Movie Recommender System</h1>
+        <div class="search-section">
+            <input type="text" id="movieInput" placeholder="Enter a movie name..." />
+            <button id="searchBtn">Recommend</button>
+        </div>
+        <div id="results"></div>
+        <div id="error" style="color:red;"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

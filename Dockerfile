@@ -2,10 +2,10 @@
 FROM jupyter/base-notebook
 
 # Copy requirements file
-COPY requirements.txt /tmp/requirements.txt
+COPY requirements_py11s.txt /tmp/requirements_py11.txt
 
 # Install Python packages
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements_py11.txt
 
 # Copy notebook and data files
 COPY --chown=${NB_UID}:${NB_GID} . /home/jovyan/work/
